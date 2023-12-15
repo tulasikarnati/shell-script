@@ -6,7 +6,7 @@ LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 echo "script name: $0"
 VALIDATE(){
-    if [ $1 -ne 0] 
+    if [ $1 -ne 0 ] 
     then
         echo "Error:: $2 is failed"
             exit 1
