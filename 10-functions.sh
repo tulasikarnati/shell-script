@@ -4,12 +4,12 @@ ID=$(id -u)
 
 VALIDATE(){
     if [ $? -ne 0] 
-then
-    echo "Error:: Installation is failed"
-    exit 1
-else
-    echo "Installation  is SUCCESS"   
-fi
+    then
+        echo "Error:: Installation is failed"
+            exit 1
+    else
+        echo "Installation  is SUCCESS"   
+    fi
 }
 
 if [ $ID -ne 0 ]
