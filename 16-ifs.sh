@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILE=/etc/passwd
+FILE="/etc/passwd"
 
 R="\e[31m"
 G="\e[32m"
@@ -9,7 +9,7 @@ N="\e[0m"
 
 if [ ! -f $FILE ]
 then 
-    echo "$R file $FILE doen't exists. $N"
+    echo -e "$R file $FILE doen't exists. $N"
 fi
 
 while IFS=":" read -r username passwd userid userfullname groupid
