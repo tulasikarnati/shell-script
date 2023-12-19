@@ -6,6 +6,7 @@ message=""
 
 while IFS= read line
 do
+    echo $line
     usage=$(echo $line | awk '{print $6F}' | cut -d % -f1)
     echo "$usage"
     partition=$(echo $line | awk '{print $1F}')
