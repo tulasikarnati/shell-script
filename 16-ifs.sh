@@ -18,4 +18,4 @@ do
     echo "user_id : $userid"
     echo "user_fullname : $userfullname"
     echo "group_id : $groupid"
-done < FILE
+done < $FILE
